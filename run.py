@@ -25,3 +25,12 @@ def number_guessing_game():
         print(f"Your number is: {guess}")
         break
 
+def validate_number(number):
+    try:
+        int(number)
+    except ValueError:
+        print("Please enter a valid number")
+        return True
+
+
+number_guessing_game()
