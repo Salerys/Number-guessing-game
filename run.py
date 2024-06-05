@@ -1,19 +1,24 @@
 import random
 
+
 def get_username():
     #   Ask and validate the user's name
-    username = input("Welcome to the number guessing game! How can I call you?\n")
+    username = input("Welcome to the number guessing game! \
+    How can I call you?\n")
 
     while not username.isalpha():
         username = input(
-            "Your name can only contain letters. Please tell me your name correctly!\n"
+            "Your name can only contain letters. \
+            Please tell me your name correctly!\n"
         )
 
     if username.isalpha():
-        return(username)
+        return username
+
 
 #   Main function
 def number_guessing_game():
+
     #   Generate a random number
     generated_number = random.randint(1, 100)
 
@@ -31,7 +36,7 @@ def number_guessing_game():
             continue
 
         #   Convert guess into integer if it is a valid number
-        guess=int(guess)
+        guess = int(guess)
 
         #   Check if the guess is within the range
         if check_number_range(guess):
@@ -43,9 +48,11 @@ def number_guessing_game():
         #   Check if the guess is correct, if yes then exit the game
         if compare_numbers(generated_number, guess):
             print(
-                f"Congratulations {username}! You've guessed the number {generated_number} correctly in {number_of_guesses} guess(es)."
+                f"Congratulations {username}! You've guessed the number \
+                {generated_number} correctly in {number_of_guesses} guess(es)."
             )
             break
+
 
 #   Check if the guess is a valid number and not a letter or symbol
 def validate_number(number):
@@ -55,13 +62,16 @@ def validate_number(number):
         print("Please enter a valid number")
         return True
 
+
 #   Check if the guess is within the range
 def check_number_range(number):
     if number < 1 or number > 100:
         print("Please enter a number within the range of 1 and 100")
         return True
 
-#   Check if the guessed number is lower/higher than the generated number or the same
+
+#   Check if the guessed number is lower/higher than the generated number
+#   or the same
 def compare_numbers(gen_num, user_num):
     if user_num < gen_num:
         print("Your guess is too low! Try guessing higher.")
@@ -71,5 +81,6 @@ def compare_numbers(gen_num, user_num):
         return False
     else:
         return True
+
 
 number_guessing_game()
