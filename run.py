@@ -10,5 +10,18 @@ def get_username():
     if username.isalpha():
         return(username)
 
-get_username()
+def number_guessing_game():
+
+    username = get_username()
+
+    print(f"{username.capitalize()} guess your number between 1 and 100.")
+
+    while True:
+        guess = input("Enter your number: ")
+
+        if validate_number(guess):
+            continue
+
+        print(f"Your number is: {guess}")
+        break
 
