@@ -8,7 +8,7 @@ def get_username():
         )
 
     if username.isalpha():
-        print(username)
+        return(username)
 
 get_username()
-    
+
