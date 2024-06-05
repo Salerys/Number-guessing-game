@@ -24,6 +24,9 @@ def number_guessing_game():
 
         guess=int(guess)
 
+        if check_number_range(guess):
+            continue
+
         print(f"Your number is: {guess}")
         break
 
@@ -34,5 +37,9 @@ def validate_number(number):
         print("Please enter a valid number")
         return True
 
+def check_number_range(number):
+    if number < 1 or number > 100:
+        print("Please enter a number within the range of 1 and 100")
+        return True
 
 number_guessing_game()
