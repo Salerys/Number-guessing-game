@@ -46,4 +46,14 @@ def check_number_range(number):
         print("Please enter a number within the range of 1 and 100")
         return True
 
+def compare_numbers(gen_num, user_num):
+    if user_num < gen_num:
+        print("Your guess is too low! Try guessing higher.")
+        return False
+    elif user_num > gen_num:
+        print("Your guess is too high! Try guessing lower.")
+        return False
+    else:
+        return True
+
 number_guessing_game()
