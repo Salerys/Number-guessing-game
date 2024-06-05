@@ -18,6 +18,8 @@ def number_guessing_game():
 
     username = get_username()
 
+    number_of_guesses = 0
+
     print(f"{username.capitalize()} guess your number between 1 and 100.")
 
     while True:
@@ -31,8 +33,13 @@ def number_guessing_game():
         if check_number_range(guess):
             continue
 
-        print(f"Your number is: {guess}")
-        break
+        number_of_guesses += 1
+
+        if compare_numbers(generated_number, guess):
+            print(
+                f"Congratulations {username}! You've guessed the number {generated_number} correctly in {number_of_guesses} guess(es)."
+            )
+            break
 
 def validate_number(number):
     try:
