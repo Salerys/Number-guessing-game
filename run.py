@@ -1,3 +1,5 @@
+import random
+
 def get_username():
     #   Ask and validate the user's name
     username = input("Welcome to the number guessing game! How can I call you?\n")
@@ -11,6 +13,8 @@ def get_username():
         return(username)
 
 def number_guessing_game():
+
+    generated_number = random.randint(1, 100)
 
     username = get_username()
 
