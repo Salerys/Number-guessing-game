@@ -22,6 +22,8 @@ def number_guessing_game():
         if validate_number(guess):
             continue
 
+        guess=int(guess)
+
         print(f"Your number is: {guess}")
         break
 
