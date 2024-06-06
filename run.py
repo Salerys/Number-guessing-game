@@ -45,10 +45,9 @@ def number_guessing_game():
 
         #   Check if the guess is correct, if yes then exit the game
         if compare_numbers(generated_number, guess):
-            print(
-                f"Congratulations {username}! You've guessed the number \
-                {generated_number} correctly in {number_of_guesses} guess(es)."
-            )
+            print(f"Congratulations {username}!", end="")
+            print(f" You've guessed the number {generated_number}", end="")
+            print(f" in {number_of_guesses} guess(es).")
             break
 
 
