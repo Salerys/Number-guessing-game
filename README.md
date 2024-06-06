@@ -29,3 +29,31 @@ If the given number is anything else than a whole number between 1 and 100, the 
 
 After choosing the number, the game tells the user if their guess was correct, too high, or too low. In case of the latter two, it will tell the user to Try again with a higher or lower number.
 
+### Logic
+
+I made this flowchart of the logic and structure of the program I wanted to create. As this is a classic game, the logical progress was partially predetermined so the program would work.
+
+![image of the flow chat](assets/images/ppt3_flowchart.jpg)
+
+### Existing Features
+#### Interface and Interaction
+- The interface is simple and uncomplicated, making the minigame easy-to-understand to the user. First it asks for the name, then the guessed number, then by each guess gives a feedback whether the guessed number is correct, too high, or too low.
+
+#### Match Result Entry 
+- Once the number has been correctly guessed, the program congratulates the user and tells them how many tries it took to win the game. After that, the user can immediately play a new round.
+
+#### Input Validation
+
+The program contains checks to make sure that the data entered is correct. If it is incorrect, the user will be prompted to re-enter the data.
+
+### Future Features 
+
+- Save function to keep track how many tries each round took.
+
+- Some "personalization", like colored text, to make it visually more appealing
+
+- An image background, so that once the program is running, it won't be a blank white background, instead something more appealing, with the rules also present there.
+
+## Testing
+
+I have manual tested the program by running it the whole way through. Everything works as intended. Friends and family have also been asked to test, and encountered no problems.
