@@ -1,32 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Number Guessing game
+Number Guessing game is a Python terminal program that runs in the Code Institute Heroku terminal.
 
-Welcome,
+It is the third portfolio project for the Code Institute course I have made.
+A classic game of number-guessing, where the user picks their username, picks a number, and the computer tells them if they guessed it correctly, or they need to try again with a lower or higher number. 
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+[Number Guessing game](https://ppt3-number-guessing-game-300af078661f.herokuapp.com/)
 
-## Reminders
+![image of the program running on Heroku on different devices](assets/images/pp3_responsive.jpg)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Owner Goals
 
-## Creating the Heroku app
+As the Owner, my goal was to create a classic, not too difficult game that can be enjoyed by everyone, and mostly anytime and anywhere, whether to pass time waiting for something, or if one is simply bored.
+I wanted the users to not have any need to too deeply immerse themselves in the game, instead be able to jump in anytime for a quick round or two.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features 
+### How to Use
 
-1. `heroku/python`
-2. `heroku/nodejs`
+![image of start](assets/images/how_to1.jpg)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+When the program runs, the user is asked to input their username. This can only contain letters.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+![image of game begin](assets/images/how_to2.jpg)
 
-Connect your GitHub repository and deploy as normal.
+Once the user has given their name, the app tells them to pick a number between 1-100.
+If the given number is anything else than a whole number between 1 and 100, the game will give an error code asking the player to pick a proper number.
 
-## Constraints
+![image of guessed number](assets/images/how_to3.jpg)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+After choosing the number, the game tells the user if their guess was correct, too high, or too low. In case of the latter two, it will tell the user to Try again with a higher or lower number.
 
----
-
-Happy coding!
