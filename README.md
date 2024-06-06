@@ -57,3 +57,20 @@ The program contains checks to make sure that the data entered is correct. If it
 ## Testing
 
 I have manual tested the program by running it the whole way through. Everything works as intended. Friends and family have also been asked to test, and encountered no problems.
+
+### Bugs
+#### Solved Bugs
+
+- Due to exceeding 79 characters, I used \ line breakers sometimes, which ended up scuffed in the final result, having too wide of space between two sentences. Corrected with multiple "print" usage.
+
+#### Remaining Bugs
+
+- See features to implement.
+
+### Other testing
+
+- The code has been manually tested by me and f riends/family, as well as in VS Code and Heroku.
+
+- The code was run through the Code Institute Python linter with a few issues initiallydue too long lines which have been corrected since then, and the CI-linter shows no errors.
+
+![image of the run.py code ran through the Code Institute Linter](assets/images/ci_proofer.jpg)
