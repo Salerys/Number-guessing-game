@@ -74,3 +74,51 @@ I have manual tested the program by running it the whole way through. Everything
 - The code was run through the Code Institute Python linter with a few issues initiallydue too long lines which have been corrected since then, and the CI-linter shows no errors.
 
 ![image of the run.py code ran through the Code Institute Linter](assets/images/ci_proofer.jpg)
+
+### Programs Used
+
+- **GitHub** was used for version control.
+
+- **Heroku** was used to display the project live. 
+  
+- **CI Python Linter** was used to validate Python code. 
+
+## Deployment
+
+The project was deployed using Code Institute's mock terminal for Heroku. 
+
+### Steps for Deployment
+
+1. Create a new App on Heroku.
+
+2. In the settings tab, go to Config Vars.
+
+3. Input relevant Keys and Values.
+  
+4. In Buildpacks, add python and js.node in that order.
+
+5. In the deploy tab, select GitHub as deployment method. 
+  
+6. Confirm connection to GitHub and search for repository.
+  
+7. Choose enable Automatic or Manual Deployment.
+
+8. Click view to view the site. 
+
+## Credits & Acknowledgements
+
+- W3Schools
+
+- youtube channel [Bro Code](https://www.youtube.com/@BroCodez)
+
+- my buddy Thomas
+
+- CI Slack community
+
+- Kay_ci who helped me a lot
+
+- [chrisryan91's README](https://github.com/chrisryan91/PremierLeagueTable/blob/main/README.md) that gave me help how to form my README 
+
+- https://ui.dev/amiresponsive for responsiveness
+
+- [draw.io](https://www.drawio.com) for the logic flowchart
